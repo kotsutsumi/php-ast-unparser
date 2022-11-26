@@ -1,14 +1,14 @@
 // 名前付きでインポートします
-import { hello } from "../src";
+import { hello } from '../src'
 
-describe("hello() のテスト", () => {
-  it("Hello. と出力", () => {
-    const log = jest.spyOn(console, "log").mockReturnValue();
+describe('hello() のテスト', () => {
+    it('Hello. と出力', () => {
+        const log = jest.spyOn(console, 'log').mockReturnValue()
 
-    hello();
+        hello()
 
-    expect(log).toHaveBeenNthCalledWith(1, "Hello.");
+        expect(log).toHaveBeenNthCalledWith(1, 'Hello.')
 
-    log.mockRestore();
-  });
-});
+        log.mockRestore()
+    })
+})
