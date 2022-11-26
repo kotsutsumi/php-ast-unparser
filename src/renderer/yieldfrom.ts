@@ -1,6 +1,5 @@
-export default (v:any) => {
-
-    return ["yield     from from();"]
+export default (v: any) => {
+    return ['yield     from from();']
 }
 
 // EOF

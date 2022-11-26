@@ -8,7 +8,7 @@ export const generator = (ast: Program): string => {
     ProgramValidator(ast)
 
     // Initialize code array
-    let code: any[]|string = []
+    let code: any[] | string = []
 
     // Iterate children
     for (const child of ast.children) {
@@ -16,13 +16,12 @@ export const generator = (ast: Program): string => {
             const exp = child.expression
 
             if (exp.kind === 'yieldfrom') {
-                code = code.concat(YieldFromRender(exp.value));
+                code = code.concat(YieldFromRender(exp.value))
             }
-            
         }
     }
 
-    return code.join("\n")
+    return code.join('\n')
 }
 
 // EOF

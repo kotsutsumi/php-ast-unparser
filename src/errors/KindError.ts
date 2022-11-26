@@ -1,2 +1,1 @@
-export class KindError extends Error {
-}
+export class KindError extends Error {}
