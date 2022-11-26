@@ -19,8 +19,13 @@ export interface UseGroup extends Base {
     items: any
 }
 
+export interface ExpressionStatement extends Base {
+    expression: any
+}
+
 export interface Program extends Base {
-    children: Array<UseGroup>
+    // children: Array<UseGroup | ExpressionStatement>
+    children: any
     errors: any
     comments: any
 }
