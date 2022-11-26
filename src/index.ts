@@ -1,3 +1,7 @@
-export const hello = (): void => {
-    console.log('Hello.')
+import { Program } from './types'
+
+export const generator = (ast: Program): void => {
+    console.log(ast)
 }
+
+// EOF
