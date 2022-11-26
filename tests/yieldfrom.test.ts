@@ -12,6 +12,7 @@ const parser = new engine({
 
 describe('yieldfrom', () => {
     it('simple', () => {
+        
         const code = generator(parser.parseEval('yield from from();'))
 
         // expect(log).toHaveBeenNthCalledWith(1, 'Hello.')
